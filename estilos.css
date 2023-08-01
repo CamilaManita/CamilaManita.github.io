@@ -3,7 +3,7 @@
 
 .contenedor_header{
     background-color: #FFFF;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     top: 0;
     left: 0;
@@ -125,7 +125,7 @@
   display: flex;
   justify-content: center;
   align-items: center; 
-  width: 1512px;
+  width: 100%;
   height: 25px;
   flex-shrink: 0;
   background: #78020A;
@@ -143,27 +143,20 @@
   letter-spacing: -0.4px;
 }
 
-.banner_principal{
-    margin-top: 14%;
-}
-
 .banner_principal img{
-    width: 1515px;
-    height: 505.247px;
+    width: 100%;
     flex-shrink: 0;
 }
 
 .banners_ofertas{
-    width: 1515px;
-    height: 505.247px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .banners_ofertas img{
-    width: 451.367px;
-    height: 381.115px;
+    width: 33%;
     flex-shrink: 0;
     margin: 25px;
 }
@@ -180,101 +173,21 @@
     text-decoration-line: underline;
 }
 
-.carrousel {
-    width: 1390px;
-    height: 318.633px;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Alineamos los elementos desde la parte superior */
+.category_container{
+    width: 100%;
+    /* margin-left: 31px;
+    margin-right: 32px;
+    margin-bottom: 81.05px; */
 }
 
-.carrousel > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.carrousel img {
-    width: 221.73px;
-    height: 172.456px;
-    flex-shrink: 0;
-}
-
-.carrousel_image {
-    width: 222px;
-    height: 173px;
-    flex-shrink: 0;
-    margin-bottom: 20px;
-}
-
-.carrousel .title {
-    width: 220.498px;
-    height: 41.882px;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Oswald;
-    font-size: 14.782px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.carrousel .price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-    font-family: Oswald;
-    font-size: 19.709px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.carrousel .offer_price {
-    color: #6F6C6C;
-    font-family: Oswald;
-    font-size: 14.782px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-decoration-line: line-through;
-}
-
-.carrousel .offer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.boton_left{
-    width: 35px;
-    height: 292px;
-    flex-shrink: 0;
-    background: #FFF;
-    border: none;
-}
-
-.boton_right {
-  position: relative;
-  width: 35px;
-  height: 292px;
-  flex-shrink: 0;
-  background: #FFF;
-  border: none;
-}
-
-.boton svg{
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
+.category_container .subtitulo{
+    margin-left: 32px;
 }
 
 .category{
-    width: 1449px;
-    height: 180.951px;
+    width: 100%;
+    margin-left: 2%;
+    margin-bottom: 81.05px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -282,12 +195,15 @@
 
 .category img{
     width: 230.093px;
-    height: 106.899px;
     flex-shrink: 0;
 }
 
+.category h4{
+    margin: 4.5%;
+}
+
 .footer{
-    width: 1512px;
+    width: 100%;
     height: 214px;
     flex-shrink: 0;
     background: #EEE;
@@ -548,3 +464,155 @@
     margin-top: 26px;
 }
 
+.urder_footer{
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 25px;
+    flex-shrink: 0;
+}
+
+.urder_footer p{
+    color: #000;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}
+
+
+/* PRUEBO NUEVO DISEÑO CARROUSEL */
+
+.Carousel{
+    width: 100%;
+    height: 100%;
+    margin: 0px 60px;
+}
+.Carousel h2{
+    margin-right: 30px;
+    color: #000;
+    font-family: Oswald;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-decoration-line: underline;
+}
+
+/* images */
+
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+.slick{
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+}
+.slick h4{
+    color: #000;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 14.782px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.slick .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: Oswald;
+    font-size: 19.709px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.slick .offer_price {
+    color: #6F6C6C;
+    font-family: Oswald;
+    font-size: 14.782px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: line-through;
+}
+
+.slick .offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slick a img{
+    object-fit: cover;
+    width: 221.73px;
+    height: 172.456px;
+    flex-shrink: 0;
+    /* height: 300px; */
+    /* width: 100%; */
+    border-radius: 4px;
+    /* box-shadow: 0 2px 5px 0 rgba(0,0,0,.5); */
+    transition: .3s ease-in-out;
+}
+.slick a img:hover{
+    opacity: .85;
+}
+
+/* buttons */
+
+.slick-arrow{
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+}
+.slick-arrow:focus{
+    outline: 0;
+}
+.slick-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0,0,0,.7);
+}
+.slick-prev{
+    left: 0px;
+}
+.slick-next{
+    right: 0px;
+}
