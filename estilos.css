@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 1% 5%;
 }
 
 .asesoramiento{
@@ -154,6 +154,8 @@
 }
 
 .banners_ofertas{
+    width: 1515px;
+    height: 505.247px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,38 +180,40 @@
     text-decoration-line: underline;
 }
 
-.carrousel{
-    width: 1339px;
-    height: 263.439px;
+.carrousel {
+    width: 1390px;
+    height: 318.633px;
     flex-shrink: 0;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start; /* Alineamos los elementos desde la parte superior */
+}
+
+.carrousel > div {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
-.carrousel div{
-    display: block;
-}
-
-.carrousel img{
+.carrousel img {
     width: 221.73px;
     height: 172.456px;
     flex-shrink: 0;
 }
 
-.carrousel_image{
+.carrousel_image {
     width: 222px;
     height: 173px;
     flex-shrink: 0;
     margin-bottom: 20px;
 }
 
-.carrousel .title{
+.carrousel .title {
     width: 220.498px;
     height: 41.882px;
     flex-shrink: 0;
     color: #000;
-    text-align: center;
     font-family: Oswald;
     font-size: 14.782px;
     font-style: normal;
@@ -217,7 +221,7 @@
     line-height: normal;
 }
 
-.carrousel .price{
+.carrousel .price {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,7 +233,7 @@
     line-height: normal;
 }
 
-.carrousel .offer_price{
+.carrousel .offer_price {
     color: #6F6C6C;
     font-family: Oswald;
     font-size: 14.782px;
@@ -239,7 +243,7 @@
     text-decoration-line: line-through;
 }
 
-.carrousel .offer{
+.carrousel .offer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,6 +273,8 @@
 }
 
 .category{
+    width: 1449px;
+    height: 180.951px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -294,7 +300,12 @@
     display: grid;
     justify-content: space-between;
     align-items: center;
-    margin: 5%;
+    width: 486px;
+    height: 152px;
+    margin-right: 94px;
+    margin-left: 78px;
+    margin-top: 16px;
+    margin-bottom: 50px;
 }
 
 .suscribite .titulo{
@@ -372,6 +383,13 @@
 .suscribite button{
     width: 475px;
     height: 28.018px;
+    color: #000;
+    font-family: IBM Plex Sans Condensed;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
     flex-shrink: 0;
     border-radius: 6px;
     background: #D3D2D2;
@@ -381,7 +399,13 @@
 }
 
 .te_informamos{
-    margin: 5%;
+    width: 259px;
+    height: 144px;
+    flex-shrink: 0;
+    margin-bottom: 54px;
+    margin-top: 16px;
+    margin-right: 94px;
+    margin-left: 0;
 }
 
 .te_informamos div{
@@ -406,8 +430,121 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
 }
 
 .te_informamos ul{
-    text-decoration: none;
+    margin-top: 12px;
+    padding: 0;
 }
+
+.te_informamos ul li{
+    margin-top: 6px;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    color: #000;
+    font-family: Oswald;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+
+.nuestras_tiendas{
+    width: 206px;
+    height: 120px;
+    flex-shrink: 0;
+    margin-top: 16px;
+    margin-bottom: 78px;
+}
+
+.nuestras_tiendas .titulo{
+    color: #000;
+    font-family: Oswald;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    margin: 0;
+}
+
+.nuestras_tiendas .lista{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.nuestras_tiendas ul{
+    margin-top: 12px;
+    padding: 0;
+}
+
+.nuestras_tiendas .columna1 {
+    width: 82px;
+    height: 90px;
+}
+
+.nuestras_tiendas .columna2 {
+    width: 92px;
+    height: 90px;
+}
+
+.nuestras_tiendas .columna1 li{
+    margin-top: 6px;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    color: #000;
+    font-family: Oswald;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+
+.nuestras_tiendas .columna2 li{
+    margin-top: 6px;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    color: #000;
+    font-family: Oswald;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+
+.nuestras_redes{
+    width: 122px;
+    height: 68px;
+    flex-shrink: 0;
+    margin-right: 79px;
+    margin-top: 16px;
+    margin-bottom: 130px;
+}
+
+.nuestras_redes .titulo{
+    color: #000;
+    font-family: Oswald;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    margin: 0;
+}
+
+.nuestras_redes .logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+}
+
