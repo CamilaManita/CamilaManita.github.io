@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100&family=Oswald:wght@200;300;400&display=swap');
 
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.body{
+    margin: 0;
+}
 
 .contenedor_header{
     background-color: #FFFF;
-    /* position: fixed; */
     width: 100%;
     top: 0;
     left: 0;
@@ -16,8 +27,8 @@
 }
 
 .headers{
-    max-width: 1100px;
-    margin: auto;
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,6 +36,7 @@
 }
 
 .asesoramiento{
+    width: 22%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +58,16 @@
     flex-shrink: 0;
 }
 
+.iconos{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.iconos .menu_movile{
+    display: none;
+}
+
 .iconos svg{
     width: 24px;
     height: 24px;
@@ -53,30 +75,21 @@
 }
 
 .logo{
-    width: 145.025px;
-    height: 45px;
-    margin: 0;
-    border: 40px;
-    flex-shrink: 0;
+    width: 15%;
+    padding-right: 5% ;
 }
 
 .nav{
-    color: #000;
-    font-family: Oswald;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.8px;
+    width: 100%;
 }
 
 .nav ul{
     display: flex;
-    gap: 40px;
+    gap: 5%;
     list-style: none;
     color: #000;
     font-family: Oswald;
-    font-size: 16px;
+    font-size: 0.85em;
     font-style: normal;
     font-weight: 200;
     line-height: normal;
@@ -93,12 +106,12 @@
 }
 
 .search_bar{
+    width: 20%;
     display: flex;
     justify-content: left;
     align-items: center;
     border-radius: 6px;
     border: 0.5px solid #C2C2C2;
-    width: 233px;
     height: 28px;
     flex-shrink: 0;
 }
@@ -143,6 +156,10 @@
   letter-spacing: -0.4px;
 }
 
+.banner_principal{
+    margin-bottom: 7%;
+}
+
 .banner_principal img{
     width: 100%;
     flex-shrink: 0;
@@ -158,7 +175,8 @@
 .banners_ofertas img{
     width: 33%;
     flex-shrink: 0;
-    margin: 25px;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .subtitulo{
@@ -175,17 +193,25 @@
 
 .category_container{
     width: 100%;
-    /* margin-left: 31px;
-    margin-right: 32px;
-    margin-bottom: 81.05px; */
+    margin: 0;
+    padding: 0;
 }
 
-.category_container .subtitulo{
-    margin-left: 32px;
+.category_container .subtitulo_categoria{
+    margin-right: 30px;
+    color: #000;
+    font-family: Oswald;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-decoration-line: underline;
+    margin-left: 2.5%;
 }
 
 .category{
-    width: 100%;
+    width: 95%;
     margin-left: 2%;
     margin-bottom: 81.05px;
     display: flex;
@@ -193,8 +219,9 @@
     align-items: center;
 }
 
+
 .category img{
-    width: 230.093px;
+    width: 100%;
     flex-shrink: 0;
 }
 
@@ -204,24 +231,20 @@
 
 .footer{
     width: 100%;
-    height: 214px;
     flex-shrink: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
     background: #EEE;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .suscribite{
+    width: 32.5%;
+    padding-left: 2%;
     display: grid;
     justify-content: space-between;
     align-items: center;
-    width: 486px;
-    height: 152px;
-    margin-right: 94px;
-    margin-left: 78px;
-    margin-top: 16px;
-    margin-bottom: 50px;
 }
 
 .suscribite .titulo{
@@ -251,7 +274,7 @@
 }
 
 .suscribite .input{
-    width: 485px;
+    width: 100%;
     height: 19px;
     color: #000;
     font-family: IBM Plex Sans Condensed;
@@ -315,20 +338,15 @@
 }
 
 .te_informamos{
-    width: 259px;
-    height: 144px;
+    width: 20%;
     flex-shrink: 0;
-    margin-bottom: 54px;
-    margin-top: 16px;
-    margin-right: 94px;
-    margin-left: 0;
+    margin-left: 5%;
 }
 
 .te_informamos div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5%;
 }
 
 .te_informamos .titulo{
@@ -356,8 +374,6 @@
 
 .te_informamos ul li{
     margin-top: 6px;
-    display: flex;
-    gap: 40px;
     list-style: none;
     color: #000;
     font-family: Oswald;
@@ -369,11 +385,7 @@
 }
 
 .nuestras_tiendas{
-    width: 206px;
-    height: 120px;
-    flex-shrink: 0;
-    margin-top: 16px;
-    margin-bottom: 78px;
+    width: 10%;
 }
 
 .nuestras_tiendas .titulo{
@@ -395,18 +407,16 @@
 }
 
 .nuestras_tiendas ul{
-    margin-top: 12px;
+    margin-top: 6%;
     padding: 0;
 }
 
 .nuestras_tiendas .columna1 {
-    width: 82px;
-    height: 90px;
+    width: 10%;
 }
 
 .nuestras_tiendas .columna2 {
-    width: 92px;
-    height: 90px;
+    width: 10%;
 }
 
 .nuestras_tiendas .columna1 li{
@@ -438,12 +448,9 @@
 }
 
 .nuestras_redes{
-    width: 122px;
-    height: 68px;
+    width: 12%;
     flex-shrink: 0;
-    margin-right: 79px;
-    margin-top: 16px;
-    margin-bottom: 130px;
+    padding-right: 4%;
 }
 
 .nuestras_redes .titulo{
@@ -455,16 +462,16 @@
     line-height: normal;
     letter-spacing: 0.6px;
     margin: 0;
+    margin-bottom: 6%;
 }
 
 .nuestras_redes .logos{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 26px;
 }
 
-.urder_footer{
+.under_footer{
     z-index: 100;
     display: flex;
     justify-content: center;
@@ -474,7 +481,7 @@
     flex-shrink: 0;
 }
 
-.urder_footer p{
+.under_footer p{
     color: #000;
     font-family: "IBM Plex Sans Condensed", sans-serif;
     font-size: 12px;
@@ -490,7 +497,7 @@
 .Carousel{
     width: 100%;
     height: 100%;
-    margin: 0px 60px;
+    /* margin: 0px 60px; */
 }
 .Carousel h2{
     margin-right: 30px;
@@ -510,8 +517,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: fit-content;
-    height: 304px;
+    width: 100%;
     padding: 10px 0px;
     margin: 0px auto;
     max-width: 90vw;
@@ -527,7 +533,7 @@
 }
 .slick{
     position: relative;
-    width: 275px;
+    width: 200px;
     padding: 0 18px;
     float: left;
     box-sizing: border-box;
@@ -575,8 +581,8 @@
 
 .slick a img{
     object-fit: cover;
-    width: 221.73px;
-    height: 172.456px;
+    width: 190px;
+    height: 172px;
     flex-shrink: 0;
     /* height: 300px; */
     /* width: 100%; */
@@ -591,14 +597,14 @@
 /* buttons */
 
 .slick-arrow{
-    border-radius: 30px;
+    /* border-radius: 30px; */
     background-color: #fff;
     position: absolute;
     z-index: 4;
-    width: 48px;
-    height: 48px;
+    width: 2em;
+    height: 26.2em;
     text-align: center;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,.15);
     border: 0;
     cursor: pointer;
 }
@@ -606,7 +612,7 @@
     outline: 0;
 }
 .slick-arrow svg{
-    width: 12px;
+    width: 20px;
     height: 100%;
     color: rgba(0,0,0,.7);
 }
@@ -615,4 +621,177 @@
 }
 .slick-next{
     right: 0px;
+}
+
+.banner_principal .image_movile{
+    display: none;
+}
+
+/* @media (max-width: 768px){
+    .iconos{
+        display: none;
+    }
+    .nav{
+        order: 1;
+        visibility: hidden;
+    }
+    .search_bar{
+        width: 30%;
+    }
+    .headers{
+        padding-left: 1%;
+    }
+    .logo{
+        padding-right: 70%;
+    }
+} */
+
+@media (max-width: 480px){
+    .body{
+        margin: 0;
+    }
+    
+    .headers{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .asesoramiento{
+        margin-left: 10%;
+        width: 80%;
+    }
+    .asesoramiento p{
+        font-size: 10px;
+    }
+    .contenedor_header hr{
+        display: none;
+    }
+    .logo img {
+        z-index: 1;
+        width: 110px;
+        height: 34px;
+    }
+    .search_bar{
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .nav{
+        display: none;
+    }
+    .iconos {
+        margin-top: 10px;
+        position: absolute;
+        justify-content: space-around;
+        right: 0;
+    }
+    .iconos .tienda{
+        display: none;
+    }
+    .iconos .envios{
+        display: none;
+    }
+    .iconos .menu_movile{
+        display: block;
+    }
+    .banner_principal img{
+        display: none;
+    }
+    .banner_principal .image_movile{
+        display: block;
+    }
+    .footer{
+        display: block;
+        width: 100%;
+    }
+    .suscribite,
+    .te_informamos,
+    .nuestras_tiendas,
+    .nuestras_redes {
+        width: 100%;
+        display: block;
+        margin-bottom: 5%; 
+    }
+    .suscribite h5{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .suscribite .input{
+        width: 98%;
+        border-radius: 6px;
+        border: 1px solid #000;
+    }
+    .suscribite .checkbox{
+        width: 100%;
+        display: flex;
+    }
+    .suscribite .checkbox input{
+        margin-right: 2%;
+    }
+    .suscribite .checkbox label{
+        color: #000;
+        font-family: IBM Plex Sans Condensed;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        letter-spacing: -0.48px;
+    }
+    .suscribite button{
+        width: 98%;
+    }
+    .te_informamos .titulo{
+        margin-left: 8%;
+    }
+    .te_informamos .lista{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nuestras_tiendas .titulo{
+        margin-left: 13%;
+    }
+    .nuestras_tiendas .lista{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nuestras_tiendas .columna1{
+        width: 40%;
+        margin-left: 11%;
+    }
+    .nuestras_tiendas .columna2{
+        width: 40%;
+    }
+    .nuestras_redes .titulo{
+        margin-left: 40%;
+    }
+    .nuestras_redes .logos{
+        width: 30%;
+        margin-left: 35%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .under_footer{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .under_footer p{
+        color: #000;
+        text-align: center;
+        font-family: "IBM Plex Sans Condensed", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        letter-spacing: -0.48px;
+    }
+
+    /* Estilos adicionales para los títulos de cada sección */
+    .titulo {
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio entre el título y el contenido */
+    }
 }
