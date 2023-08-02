@@ -64,7 +64,7 @@ body{
     justify-content: end;
 }
 
-.iconos .menu_movile{
+.iconos .menu_mobile{
     display: none;
 }
 
@@ -610,7 +610,7 @@ body{
     right: 0px;
 }
 
-.banner_principal .image_movile{
+.banner_principal .image_mobile{
     display: none;
 }
 
@@ -664,13 +664,13 @@ body{
     .iconos .envios{
         display: none;
     }
-    .iconos .menu_movile{
+    .iconos .menu_mobile{
         display: block;
     }
     .banner_principal img{
         display: none;
     }
-    .banner_principal .image_movile{
+    .banner_principal .image_mobile{
         display: block;
     }
     .footer{
@@ -683,7 +683,8 @@ body{
     .nuestras_redes {
         width: 100%;
         display: block;
-        margin-bottom: 4%; 
+        margin-bottom: 4%;
+        margin-left: 0;
     }
     .titulo {
         font-weight: bold;
@@ -718,10 +719,12 @@ body{
         width: 98%;
     }
     .te_informamos .titulo{
+        padding-left: 4%;
         margin-left: 8%;
     }
     .te_informamos .lista{
         width: 90%;
+        padding-left: 5%;
         display: flex;
         justify-content: space-around;
         align-items: center;
