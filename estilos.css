@@ -19,7 +19,7 @@ a {
     color: inherit;
 }
 
-.contenedor_header {
+header {
     background-color: #FFFF;
     width: 100%;
     top: 0;
@@ -27,18 +27,33 @@ a {
     z-index: 99;
 }
 
-.contenedor_header hr {
+header hr {
     color: #6F6C6C;
     border-width: 0.2px;
 }
 
-.headers {
+.header_superior {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1% 5%;
+}
+
+.header_inferior {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+}
+.asesoramiento {
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .asesoramiento {
@@ -70,14 +85,14 @@ a {
     justify-content: end;
 }
 
-.iconos .menu_mobile {
-    display: none;
-}
-
 .iconos svg {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+}
+
+.iconos-mobile {
+    display: none;
 }
 
 .logo {
@@ -633,13 +648,67 @@ a {
     display: none;
 }
 
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.nav-menu ul {
+    list-style: none;
+    color: #000;
+    font-family: Oswald;
+    font-size: 0.85em;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+.nav-menu li {
+    margin: 10px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.show-menu {
+    left: 0;
+}
 
 @media (max-width: 480px) {
-    .body {
+    body {
         margin: 0;
     }
 
-    .headers {
+    header hr {
+        display: none;
+    }
+
+    .header_superior {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header_inferior {
         display: block;
         justify-content: space-between;
         align-items: center;
@@ -675,22 +744,19 @@ a {
     }
 
     .iconos {
+        display: none;
+    }
+    
+    .iconos-mobile{
+        width: 45%;
+        display: flex;
         margin-top: 10px;
+        margin-right: 10px;
         position: absolute;
         justify-content: space-around;
         right: 0;
-    }
-
-    .iconos .tienda {
-        display: none;
-    }
-
-    .iconos .envios {
-        display: none;
-    }
-
-    .iconos .menu_mobile {
-        display: block;
+        z-index: 1;
+        cursor: pointer;
     }
 
     .banner_principal img {

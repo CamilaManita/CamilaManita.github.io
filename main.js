@@ -37,3 +37,10 @@ let nextAction = (leftPosition, trackWidth, listWidth, slickWidth, track) => {
     track.style.left = `${-1 * (leftPosition + slickWidth)}px`;
   }
 };
+
+const menuIcon = document.getElementById('menu-icon');
+const navMenu = document.getElementById('nav-menu');
+
+menuIcon.addEventListener('click', () => {
+  navMenu.classList.toggle('show-menu');
+});
