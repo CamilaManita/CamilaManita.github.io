@@ -664,7 +664,7 @@ header hr {
     position: fixed;
     top: 0;
     left: -300px;
-    width: 70%;
+    /* width: 70%; */
     height: 100%;
     background-color: #fff;
     box-shadow: 0 0 15px #000;
@@ -776,6 +776,10 @@ header hr {
         right: 0;
         z-index: 1;
         cursor: pointer;
+    }
+
+    .nav-menu{
+        width: 70%;
     }
 
     .banner_principal img {
